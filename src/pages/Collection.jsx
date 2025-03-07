@@ -7,7 +7,7 @@ import ProductItem from '../components/ProductItem';
 
 const Collection = () => {
 
-  const { products } = useContext(ShopContext);
+  const { products, search, showSearch } = useContext(ShopContext);
 
   const [showFilter, setShowFilter ] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
@@ -41,6 +41,10 @@ const Collection = () => {
   const applyFilter = () => {
 
     let productsCopy = products.slice(); // Copy All Products by can create new array โดยไม่กระทบ Original All Products
+
+    if (showSearch && search) {
+      productsCopy = productsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase())) // query product 
+    }
 
     if ( category.length > 0 ) {
       productsCopy = productsCopy.filter(item => category.includes(item.category));
@@ -76,7 +80,7 @@ const Collection = () => {
   // Re-render When Select Category & Subcategory
   useEffect(()=>{
     applyFilter();
-  },[category, subCategory])
+  },[category, subCategory, search, showSearch])
 
   useEffect(()=>{
     sortProduct();
