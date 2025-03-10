@@ -29,10 +29,10 @@ const PlaceOrder = () => {
             <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='State'/>
           </div>
           <div className='flex gap-3'>
-            <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Zipcode'/>
+            <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="tel" pattern="[0-9]*"  placeholder='Zipcode'/>
             <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Country'/>
           </div>
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Phone'/>
+          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="tel" pattern='[0-9]{10}' maxLength="10" placeholder='Phone'/>
       </div>
 
       {/**----------------Right Side ---------------------- */}
