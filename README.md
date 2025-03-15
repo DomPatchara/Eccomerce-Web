@@ -17,5 +17,5 @@ This is a simple ecommerce web application built with React. It allows users to 
 
 ## 💻 Technologies Used
 - **Vite**: Fast build tool for development and production
-- **React**: Frontend framework.
+- **React**: Frontend Library.
 - **TailwindCSS**: For styling and responsive design.
