@@ -19,3 +19,9 @@ This is a simple ecommerce web application built with React. It allows users to 
 - **Vite**: Fast build tool for development and production
 - **React**: Frontend Library.
 - **TailwindCSS**: For styling and responsive design.
+
+## 🎯 Live Demo
+https://dome-project-eccomerce.netlify.app/
+
+## 📷 Screen Shot
+![Screenshot 2025-04-09 182704](https://github.com/user-attachments/assets/1a70f206-aae7-4db4-ba78-b35c18b1203d)
